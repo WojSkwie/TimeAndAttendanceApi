@@ -22,11 +22,11 @@ namespace TimeAndAttendanceApi.Models
         
     }
 
-    public enum ContractType
+    /*public enum ContractType
     {
         civilContract,
         employmentContract,
         b2b,
         commissionContract
-    }
+    }*/
 }

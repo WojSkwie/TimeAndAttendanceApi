@@ -21,5 +21,15 @@ namespace TimeAndAttendanceApi.Models
         public DateTime EndTime { get; set; }
         [Required]
         public Employee Employee { get; set; }
+
+        
     }
+
+    /*public enum WorkdayType
+    {
+        normal,
+        vacation,
+        onRequest,
+        sickLeave
+    }*/
 }

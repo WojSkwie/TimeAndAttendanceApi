@@ -216,9 +216,18 @@
     <Compile Include="Migrations\201908090816510_ScaffoldedClassesAndEmployeeAndWorkdayTables.Designer.cs">
       <DependentUpon>201908090816510_ScaffoldedClassesAndEmployeeAndWorkdayTables.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201908090920213_AddedContractTypeTable.cs" />
+    <Compile Include="Migrations\201908090920213_AddedContractTypeTable.Designer.cs">
+      <DependentUpon>201908090920213_AddedContractTypeTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201908090921268_AddedValuesOfContractTypes.cs" />
+    <Compile Include="Migrations\201908090921268_AddedValuesOfContractTypes.Designer.cs">
+      <DependentUpon>201908090921268_AddedValuesOfContractTypes.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountBindingModels.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
+    <Compile Include="Models\ContractType.cs" />
     <Compile Include="Models\Employee.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\WorkAction.cs" />
@@ -319,6 +328,12 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201908090816510_ScaffoldedClassesAndEmployeeAndWorkdayTables.resx">
       <DependentUpon>201908090816510_ScaffoldedClassesAndEmployeeAndWorkdayTables.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201908090920213_AddedContractTypeTable.resx">
+      <DependentUpon>201908090920213_AddedContractTypeTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201908090921268_AddedValuesOfContractTypes.resx">
+      <DependentUpon>201908090921268_AddedValuesOfContractTypes.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
