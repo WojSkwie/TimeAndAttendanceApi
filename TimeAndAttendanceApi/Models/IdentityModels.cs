@@ -34,5 +34,6 @@ namespace TimeAndAttendanceApi.Models
         public DbSet<Employee> Employees { get; set; }
         public DbSet<Workday> Workdays { get; set; }
         public DbSet<ContractType> ContractTypes { get; set; }
+        public DbSet<WorkdayType> WorkdayTypes { get; set; }
     }
 }

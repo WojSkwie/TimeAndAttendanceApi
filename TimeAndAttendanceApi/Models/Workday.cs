@@ -22,14 +22,9 @@ namespace TimeAndAttendanceApi.Models
         [Required]
         public Employee Employee { get; set; }
 
+        [Required]
+        public WorkdayType WorkdayType { get; set; }
+
         
     }
-
-    /*public enum WorkdayType
-    {
-        normal,
-        vacation,
-        onRequest,
-        sickLeave
-    }*/
 }

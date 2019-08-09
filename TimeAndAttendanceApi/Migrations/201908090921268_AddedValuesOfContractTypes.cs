@@ -18,7 +18,7 @@ namespace TimeAndAttendanceApi.Migrations
         
         public override void Down()
         {
-            Sql($"DELETE FROM dbo.ContractTypes WHERE Id BETWEEN {EContractType.civilContract} and {EContractType.commissionContract}");
+            Sql($"DELETE FROM dbo.ContractTypes WHERE Id BETWEEN {(int)EContractType.civilContract} and {(int)EContractType.commissionContract}");
         }
     }
 }

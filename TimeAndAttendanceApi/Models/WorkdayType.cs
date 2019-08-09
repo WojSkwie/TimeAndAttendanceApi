@@ -6,21 +6,22 @@ using System.Web;
 
 namespace TimeAndAttendanceApi.Models
 {
-    public class ContractType
+    public class WorkdayType
     {
         [Key]
         public int Id { get; set; }
         [Required]
         [MaxLength(25)]
         public string Name { get; set; }
+        [Range(0,1)]
+        public double SalaryCoefficient { get; set; }
     }
 
-
-    public enum EContractType
+    public enum EWorkdayType
     {
-        civilContract = 1,
-        employmentContract = 2,
-        b2b = 3,
-        commissionContract = 4
+        normal = 1,
+        vacation = 2,
+        onRequest = 3,
+        sickLeave = 4
     }
 }

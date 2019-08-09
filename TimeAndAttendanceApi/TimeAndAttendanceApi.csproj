@@ -224,6 +224,18 @@
     <Compile Include="Migrations\201908090921268_AddedValuesOfContractTypes.Designer.cs">
       <DependentUpon>201908090921268_AddedValuesOfContractTypes.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201908091031041_AddedMaxLenghtOfContractTypeName.cs" />
+    <Compile Include="Migrations\201908091031041_AddedMaxLenghtOfContractTypeName.Designer.cs">
+      <DependentUpon>201908091031041_AddedMaxLenghtOfContractTypeName.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201908091217323_AddedWorkdayTypesTable.cs" />
+    <Compile Include="Migrations\201908091217323_AddedWorkdayTypesTable.Designer.cs">
+      <DependentUpon>201908091217323_AddedWorkdayTypesTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201908091218134_PopulateWorkdayTypesTable.cs" />
+    <Compile Include="Migrations\201908091218134_PopulateWorkdayTypesTable.Designer.cs">
+      <DependentUpon>201908091218134_PopulateWorkdayTypesTable.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountBindingModels.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
@@ -232,6 +244,7 @@
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\WorkAction.cs" />
     <Compile Include="Models\Workday.cs" />
+    <Compile Include="Models\WorkdayType.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Providers\ApplicationOAuthProvider.cs" />
     <Compile Include="Results\ChallengeResult.cs" />
@@ -334,6 +347,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201908090921268_AddedValuesOfContractTypes.resx">
       <DependentUpon>201908090921268_AddedValuesOfContractTypes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201908091031041_AddedMaxLenghtOfContractTypeName.resx">
+      <DependentUpon>201908091031041_AddedMaxLenghtOfContractTypeName.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201908091217323_AddedWorkdayTypesTable.resx">
+      <DependentUpon>201908091217323_AddedWorkdayTypesTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201908091218134_PopulateWorkdayTypesTable.resx">
+      <DependentUpon>201908091218134_PopulateWorkdayTypesTable.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
