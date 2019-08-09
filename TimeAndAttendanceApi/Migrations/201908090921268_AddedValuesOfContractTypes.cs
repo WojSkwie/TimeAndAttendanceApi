@@ -8,15 +8,17 @@ namespace TimeAndAttendanceApi.Migrations
     {
         public override void Up()
         {
-            Sql($"INSERT INTO ContractTypes (Id, Name) VALUES ({EContractType.civilContract}, 'Civil Contract')");
-            Sql($"INSERT INTO ContractTypes (Id, Name) VALUES ({EContractType.employmentContract}, 'Employment Contract')");
-            Sql($"INSERT INTO ContractTypes (Id, Name) VALUES ({EContractType.b2b}, 'B2B')");
-            Sql($"INSERT INTO ContractTypes (Id, Name) VALUES ({EContractType.commissionContract}, 'Commission Contract')");
+            Sql("SET IDENTITY_INSERT dbo.ContractTypes ON");
+            Sql($"INSERT INTO dbo.ContractTypes (Id, Name) VALUES ({(int)EContractType.civilContract}, 'Civil Contract')");
+            Sql($"INSERT INTO dbo.ContractTypes (Id, Name) VALUES ({(int)EContractType.employmentContract}, 'Employment Contract')");
+            Sql($"INSERT INTO dbo.ContractTypes (Id, Name) VALUES ({(int)EContractType.b2b}, 'B2B')");
+            Sql($"INSERT INTO dbo.ContractTypes (Id, Name) VALUES ({(int)EContractType.commissionContract}, 'Commission Contract')");
+            Sql("SET IDENTITY_INSERT dbo.ContractTypes OFF");
         }
         
         public override void Down()
         {
-            Sql($"DELETE FROM ContractTypes WHERE Id BETWEEN {EContractType.civilContract} and {EContractType.commissionContract}");
+            Sql($"DELETE FROM dbo.ContractTypes WHERE Id BETWEEN {EContractType.civilContract} and {EContractType.commissionContract}");
         }
     }
 }
