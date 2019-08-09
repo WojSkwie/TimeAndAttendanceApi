@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.28917.181
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TimeAndAttendanceApi", "TimeAndAttendanceApi\TimeAndAttendanceApi.csproj", "{5F1578B1-3E2D-45D0-9585-8B44A7F43F69}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TimeAndAttendanceApi.Tests", "TimeAndAttendanceApi.Tests\TimeAndAttendanceApi.Tests.csproj", "{4D2A9B26-BC1D-4855-98BB-F0C0481AFB3A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5F1578B1-3E2D-45D0-9585-8B44A7F43F69}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5F1578B1-3E2D-45D0-9585-8B44A7F43F69}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5F1578B1-3E2D-45D0-9585-8B44A7F43F69}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5F1578B1-3E2D-45D0-9585-8B44A7F43F69}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4D2A9B26-BC1D-4855-98BB-F0C0481AFB3A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4D2A9B26-BC1D-4855-98BB-F0C0481AFB3A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4D2A9B26-BC1D-4855-98BB-F0C0481AFB3A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4D2A9B26-BC1D-4855-98BB-F0C0481AFB3A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {06F27342-2113-4C01-B8B4-33CD49A34B45}
+	EndGlobalSection
+EndGlobal
